@@ -1,6 +1,8 @@
 /* Basic Reset */
 * {
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -21,7 +23,7 @@ body {
 }
 
 .nav-links {
-  display: flex;
+  display: flex; /* Ensure the nav is always flex */
   list-style: none;
 }
 
@@ -50,8 +52,7 @@ body {
 /* Mobile Styles */
 @media (max-width: 768px) {
   .nav-links {
-    display: none;
-    flex-direction: column;
+    flex-direction: column; /* Stack the menu items vertically on smaller screens */
     width: 100%;
     position: absolute;
     top: 60px;
@@ -70,16 +71,17 @@ body {
   }
 
   .nav-links.active {
-    display: flex;
+    display: flex; /* Show the menu when the active class is added */
   }
 }
 
 /* Image Styles */
 img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto; /* Added vertical margin for spacing */
-    border-radius: 8px; /* Rounded corners for images */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
+
