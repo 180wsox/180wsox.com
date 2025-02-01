@@ -1,43 +1,78 @@
-/* General Styles */
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background: linear-gradient(135deg, #000000, #434343); /* Gradient background for depth */
-    color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Menu Toggle for Small Screens */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
     text-align: center;
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-}
+  }
 
-a {
-    color: #00bfff; /* Lighter, vibrant color for better contrast */
-    text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
-}
+  .menu-toggle {
+    display: block;
+  }
 
-a:hover {
-    color: #1e90ff; /* Change color on hover */
-    transform: scale(1.05); /* Slightly enlarge link on hover */
-}
-
-/* Section Styles */
-.section-class {
-    background: rgba(0, 0, 0, 0.8); /* Slightly transparent black background */
-    color: white;
-    text-align: center;
-    padding: 20px;
-    border-radius: 8px; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
-}
-
-.section-class a {
-    color: #00bfff; /* Same color as general links for consistency */
-    text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.section-class a:hover {
-    color: #1e90ff;
-    transform: scale(1.05);
+  .nav-links.active {
+    display: flex;
+  }
 }
 
 /* Image Styles */
