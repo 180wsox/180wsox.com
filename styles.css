@@ -3,11 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #000;
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #0;
+  background-color: #000;
   padding-top: 20px; /* Adjust according to your navbar height */
 }
 
