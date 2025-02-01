@@ -12,10 +12,39 @@ body {
   padding-top: 20px; /* Adjust according to your navbar height */
 }
 
-body a {
+body h1 {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+}
+
+body h2 {
+  color: white;
+  text-decoration: none;
+}
+
+body h3 {
+  color: white;
+  text-decoration: none;
+}
+
+body h4 {
+  color: white;
+  text-decoration: none;
+}
+
+body h5 {
+  color: white;
+  text-decoration: none;
+}
+
+body h6 {
+  color: white;
+  text-decoration: none;
+}
+
+body p {
+  color: white;
+  text-decoration: none;
 }
 
 /* Navbar Styles */
