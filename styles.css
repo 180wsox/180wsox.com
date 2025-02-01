@@ -12,6 +12,12 @@ body {
   padding-top: 20px; /* Adjust according to your navbar height */
 }
 
+body a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
 /* Navbar Styles */
 .navbar {
   display: flex;
