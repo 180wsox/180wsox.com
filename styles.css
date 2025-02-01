@@ -47,6 +47,11 @@ body p {
   text-decoration: none;
 }
 
+body ul {
+  color: white;
+  text-decoration: none;
+}
+
 /* Navbar Styles */
 .navbar {
   display: flex;
